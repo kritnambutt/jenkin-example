@@ -11,11 +11,12 @@ pipeline {
         stage('exercise 2') {
             steps {
                 sh '''
-                    sed -i '' 's/devops/hello_world/g' example.txt
+                    sed -e 's/devops/Hello_World/g' example.txt
+                    echo example1.txt
                 '''
             }
         }
-
+        
         stage('Build') {
             steps {
                 echo 'Building..'
