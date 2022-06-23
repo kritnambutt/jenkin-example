@@ -3,7 +3,6 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                echo 'Testing..'
                 echo grep -o -i devops copy-example.txt | wc -l
                 echo sed -i '' 's/devops/hello_world/g' example.txt
             }
