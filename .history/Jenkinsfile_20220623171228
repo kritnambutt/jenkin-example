@@ -11,7 +11,7 @@ pipeline {
         stage('exercise 2') {
             steps {
                 sh '''
-                . ./exercise_2.sh
+                . ./exercise2.sh
                 '''
             }
         }
